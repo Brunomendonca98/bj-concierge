@@ -1,50 +1,66 @@
-# Welcome to your Expo app 👋
+# 📱 BJ Concierge
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo desenvolvido em **React Native (Expo)** como parte da avaliação da disciplina.  
+O app simula um sistema de concierge de FBO (Fixed-Base Operator), permitindo solicitar serviços como traslado, hotel e catering.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Funcionalidades
 
-   ```bash
-   npm install
-   ```
+- **Home**: Tela inicial com atalhos para serviços e novo pedido.  
+- **Serviços**: Lista de serviços disponíveis.  
+- **Novo Pedido**: Formulário com **validação de campos** (nome, e-mail, serviço, data, hora, passageiros e aceite de termos).  
+- **Confirmação**: Mostra os dados preenchidos após envio.  
+- **Sobre**: Informações sobre o app.  
 
-2. Start the app
+### ✔️ Requisitos atendidos
+- 4+ telas
+- Formulário com validação
+- Layout organizado
+- Estrutura de código separada em `src/`
+- Navegação com `@react-navigation/native`
+- Bibliotecas externas: `react-hook-form`, `zod`, `@hookform/resolvers`
+- Repositório no GitHub
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🛠️ Tecnologias
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- [Expo](https://expo.dev/)  
+- React Native  
+- React Navigation  
+- React Hook Form + Zod (validação de formulários)  
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📸 Telas
 
-When you're ready, run:
+### Home
+![Home](./prints/home.jpg)
+
+### Serviços
+![Serviços](./prints/services.jpg)
+
+### Novo Pedido (erros de validação)
+![Novo Pedido - Erros](./prints/neworder_error.jpg)
+
+### Novo Pedido (preenchido)
+![Novo Pedido - OK](./prints/neworder_ok.jpg)
+
+### Confirmação
+![Confirmação](./prints/confirmation.jpg)
+
+---
+
+## ▶️ Como rodar localmente
 
 ```bash
-npm run reset-project
-```
+# Clonar o repositório
+git clone https://github.com/Brunomendonca98/bj-concierge.git
+cd bj-concierge
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+# Instalar dependências
+npm install
 
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+# Rodar com Expo
+npx expo start --tunnel
